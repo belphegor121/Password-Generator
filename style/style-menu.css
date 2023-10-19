@@ -1,0 +1,83 @@
+/* Estilos para el menu de navegacion */
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 490;
+    background-color: #000000e0;
+    text-align: center;
+    width: 0%;
+    height: 100vh;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a::after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    background-color: #fff;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.menu a:hover::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.btn-menu {
+    width: 45px;
+    height: 45px;
+    z-index: 500;
+    background-color: #181719;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menu img {
+    width: 35px;
+    height: 35px;
+}
+
+.is-active.menu {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}

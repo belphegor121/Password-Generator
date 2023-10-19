@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/atari');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'game';
+    src: url(/Password-Generator/font/game.ttf);
+}
+
+.title {
+    font-family: 'game';
+    font-size: 45px;
+    color: #22ee22;
+}
+
+.paragraph {
+    margin: 30px 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #bfc0c1;
+}
+
+.generator {
+    width: 10rem;
+    height: 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: #22ee22;
+    color: #000000;
+    cursor: pointer;
+}
+
+.container-password {
+    width: 90%;
+    height: 60px;
+    padding: 0 10px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c3c3c3;
+}
+
+.container-password span {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-password .copy, .save{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* Estilos para la ventana de guarar la contraseña */
+
+.container-save-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 501;
+    transform: translate(-100%, 0);
+    transition: all .4s ease;
+}
+
+.save-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.save-box input, .save-box .btn-save {
+    width: 80%;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 10px;
+    outline: none;
+    font-size: 17px;
+}
+
+.exit-box {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+    background-color: #201f1f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.exit-box img {
+    width: 38px;
+}
+
+.is-active-box.container-save-box {
+    transform: translate(0, 0);
+}

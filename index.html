@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css"> 
+    <link rel="stylesheet" href="style/style-menu.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+          <div class="menu">
+            <ul>
+              <li><a href="password.html">Passwords</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <button class="btn-menu"><img src="img/menu-hamburger.svg" alt="Menu"></button>
+        </nav>
+      </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Password Generator</h1>
+            <p class="paragraph">
+                Are your passwords secure? With our app, you can create strong passwords in seconds. Protect your personal information now!
+            </p>
+            <button class="generator">Generate Password</button>
+
+            <div class="container-password">
+                <div class="save">
+                    <img src="img/save.svg">
+                </div>
+                <span class="password"></span>
+                <div class="copy">
+                    <img src="img/copy.svg">
+                </div>
+            </div>
+        </div>
+
+        <section class="container-save-box">
+            <button class="exit-box">
+                <img src="img/x-menu-hamburger.svg" alt="Exit">
+            </button>
+            <div class="save-box">
+                <input type="text" placeholder="Title" required id="title">
+                <input type="text" placeholder="Username" required id="username">
+                <input type="text" placeholder="Password" required id="password">
+                <button class="btn-save">Save</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
