@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/atari');
+@import url('https://fonts.cdnfonts.com/css/tetris');
 
 * {
     padding: 0;
@@ -21,17 +21,13 @@ body {
 
 .container {
     width: 90%;
+    margin-top: 50px;
     text-align: center;
 }
 
-@font-face {
-    font-family: 'game';
-    src: url(/Password-Generator/font/game.ttf);
-}
-
 .title {
-    font-family: 'game';
-    font-size: 45px;
+    font-family: 'Tetris', sans-serif;
+    font-size: 60px;
     color: #22ee22;
 }
 
@@ -57,6 +53,7 @@ body {
 
 .container-password {
     width: 90%;
+    max-width: 500px;
     height: 60px;
     padding: 0 10px;
     margin: 30px auto;
